@@ -1,5 +1,6 @@
 let playerRed = "R";
 let playerYellow = "Y";
+let winnerMusic = new Audio( './assets/winner.mp3');
 
 let curPlayer = playerRed;
 
@@ -104,9 +105,11 @@ function setWinner(r ,c ){
     let winner = document.getElementById("winner");
     if(board[r][c] == playerRed){
         winner.innerText = "RED Wins !!!";
+        winnerMusic.play();
         gameOver = true;
     }else{
         winner.innerText = "Yellow Wins !!!";
+        winnerMusic.play();
         gameOver = true;
     }
     

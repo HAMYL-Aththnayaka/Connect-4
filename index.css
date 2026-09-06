@@ -1,6 +1,10 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
+    background: url('./assets/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: relative;
 }
 
 #board{
